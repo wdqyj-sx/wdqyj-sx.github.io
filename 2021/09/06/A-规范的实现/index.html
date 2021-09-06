@@ -190,7 +190,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      12 字
+      135 字
     </span>
   
 
@@ -200,7 +200,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      2
        分钟
     </span>
   
@@ -241,7 +241,10 @@
             <h1 style="display: none">A+规范的实现</h1>
             
             <div class="markdown-body">
-              <h2 id="发布订阅模式和观察者模式"><a href="#发布订阅模式和观察者模式" class="headerlink" title="发布订阅模式和观察者模式"></a>发布订阅模式和观察者模式</h2>
+              <h2 id="发布订阅模式和观察者模式"><a href="#发布订阅模式和观察者模式" class="headerlink" title="发布订阅模式和观察者模式"></a>发布订阅模式和观察者模式</h2><div class="hljs code-wrapper"><pre><code>* node主线程中,异步回调是在主线程执行后执行，因此想要搜集异步函数执行的结果集合，可以采用高阶函数的形式
+<figure class="highlight js"><table><tr><td class="gutter hljs"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs js">    <span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;fs&#x27;</span>)<br><br><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">after</span>(<span class="hljs-params">timer, callback</span>) </span>&#123;<br>  <span class="hljs-keyword">let</span> _arr = []<br>  <span class="hljs-keyword">return</span> <span class="hljs-function">(<span class="hljs-params">data, index</span>) =&gt;</span> &#123;<br>    _arr[index] = data<br>    <span class="hljs-keyword">if</span> (--timer == <span class="hljs-number">0</span>) &#123;<br>      callback(_arr)<br>    &#125;<br>  &#125;<br>&#125;<br><span class="hljs-keyword">let</span> out = after(<span class="hljs-number">2</span>, <span class="hljs-function">(<span class="hljs-params">arr</span>) =&gt;</span> &#123;<br>  <span class="hljs-built_in">console</span>.log(arr)<br>&#125;)<br><br>fs.readFile(<span class="hljs-string">&#x27;./a.txt&#x27;</span>, <span class="hljs-string">&#x27;UTF8&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">err, data</span>) =&gt;</span> &#123;<br>  out(data, <span class="hljs-number">0</span>)<br>&#125;)<br><br>fs.readFile(<span class="hljs-string">&#x27;./b.txt&#x27;</span>, <span class="hljs-string">&#x27;UTF8&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">err, data</span>) =&gt;</span> &#123;<br>  out(data, <span class="hljs-number">1</span>)<br>&#125;)<br><br></code></pre></div></td></tr></table></figure>
+</code></pre>
+
             </div>
             <hr>
             <div>
