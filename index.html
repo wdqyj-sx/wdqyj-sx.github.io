@@ -180,6 +180,386 @@
     
     
       <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2021/10/10/eventLoop%E4%BA%8B%E4%BB%B6%E7%8E%AF%E7%9A%84%E7%90%86%E8%A7%A3/" target="_self">
+          <img src="/img/5ab27ed2-e652-46e7-9697-809bcc91f25d.jpg" srcset="/img/loading.gif" lazyload alt="eventLoop事件环的理解">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/10/10/eventLoop%E4%BA%8B%E4%BB%B6%E7%8E%AF%E7%9A%84%E7%90%86%E8%A7%A3/" target="_self">
+          eventLoop事件环的理解
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/10/10/eventLoop%E4%BA%8B%E4%BB%B6%E7%8E%AF%E7%9A%84%E7%90%86%E8%A7%A3/" target="_self">
+          
+          
+            
+          
+          
+事件环：实现js异步概念，解决异步执行的时候的调度问题
+浏览器由多个进程组成，每个进程包含多个线程
+浏览器运行流程
+js执行的时候，按照从上到下执行，代码会依次放入执行栈中执行，遇到异步，则    会             把异步回调放入事件队列（消息队列）中，等到执行栈中的代码全部执行完，再依次将事件队列中的函数拿出来依次执行
+代码执行可能会遇到Promise，这些为微任务，微任务执行完浏览
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-10-10 09:58" pubdate>
+              2021-10-10
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/js%E5%9F%BA%E7%A1%80/">js基础</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/js/">js</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2021/10/10/async%E5%92%8Cawait%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E5%AE%9E%E7%8E%B0/" target="_self">
+          <img src="/img/5ab27ed2-e652-46e7-9697-809bcc91f25d.jpg" srcset="/img/loading.gif" lazyload alt="async和await的原理及实现">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/10/10/async%E5%92%8Cawait%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E5%AE%9E%E7%8E%B0/" target="_self">
+          async和await的原理及实现
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/10/10/async%E5%92%8Cawait%E7%9A%84%E5%8E%9F%E7%90%86%E5%8F%8A%E5%AE%9E%E7%8E%B0/" target="_self">
+          
+          
+            
+          
+          async和await的基本使用https://editor.csdn.net/md/?articleId=116918202
+generator函数
+generator 返回一个遍历器对象
+
+1234567891011121314function* read () &#123;    console.log(1)    yield 1    console.log(2)    yield 2  
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-10-10 09:57" pubdate>
+              2021-10-10
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Promise-A-%E8%A7%84%E8%8C%83%E7%9A%84%E5%AE%9E%E7%8E%B0/">Promise A+规范的实现</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/js/">js</a>
+            
+              <a href="/tags/node/">node</a>
+            
+              <a href="/tags/Promise/">Promise</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2021/10/10/Promise%E5%80%BC%E7%9A%84%E7%A9%BF%E9%80%8F%E5%92%8C%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/" target="_self">
+          <img src="/img/5ab27ed2-e652-46e7-9697-809bcc91f25d.jpg" srcset="/img/loading.gif" lazyload alt="Promise值的穿透和静态方法的实现">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/10/10/Promise%E5%80%BC%E7%9A%84%E7%A9%BF%E9%80%8F%E5%92%8C%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/" target="_self">
+          Promise值的穿透和静态方法的实现
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/10/10/Promise%E5%80%BC%E7%9A%84%E7%A9%BF%E9%80%8F%E5%92%8C%E9%9D%99%E6%80%81%E6%96%B9%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0/" target="_self">
+          
+          
+            
+          
+          值得传递
+then方法不调用参数，可以一直把参数往后传递
+
+1234567891011let p = new Promise((resolve, reject) =&gt; &#123;    resolve(&#x27;sx&#x27;)&#125;)p.then()    .then()    .then((value) =&gt; &#123;        console.log(valu
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-10-10 09:56" pubdate>
+              2021-10-10
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Promise-A-%E8%A7%84%E8%8C%83%E7%9A%84%E5%AE%9E%E7%8E%B0/">Promise A+规范的实现</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/js/">js</a>
+            
+              <a href="/tags/node/">node</a>
+            
+              <a href="/tags/Promise/">Promise</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2021/10/10/Promise%E5%BC%82%E6%AD%A5%E8%B0%83%E7%94%A8%E7%9A%84%E5%AE%9E%E7%8E%B0/" target="_self">
+          <img src="/img/5ab27ed2-e652-46e7-9697-809bcc91f25d.jpg" srcset="/img/loading.gif" lazyload alt="Promise异步调用的实现">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/10/10/Promise%E5%BC%82%E6%AD%A5%E8%B0%83%E7%94%A8%E7%9A%84%E5%AE%9E%E7%8E%B0/" target="_self">
+          Promise异步调用的实现
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/10/10/Promise%E5%BC%82%E6%AD%A5%E8%B0%83%E7%94%A8%E7%9A%84%E5%AE%9E%E7%8E%B0/" target="_self">
+          
+          
+            
+          
+          
+Promise可以实现链式调用，既then之后可以接着使用then方法
+
+1234567891011let p = new Promise((resolve, reject) =&gt; &#123;    resolve(&#x27;a&#x27;)&#125;)p.then((value) =&gt; &#123;    return value&#125;, (reason) =&gt; 
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-10-10 09:54" pubdate>
+              2021-10-10
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Promise-A-%E8%A7%84%E8%8C%83%E7%9A%84%E5%AE%9E%E7%8E%B0/">Promise A+规范的实现</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/js/">js</a>
+            
+              <a href="/tags/node/">node</a>
+            
+              <a href="/tags/Promise/">Promise</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2021/10/10/Promise%E5%BC%82%E6%AD%A5%E5%A4%84%E7%90%86/" target="_self">
+          <img src="/img/5ab27ed2-e652-46e7-9697-809bcc91f25d.jpg" srcset="/img/loading.gif" lazyload alt="Promise异步处理">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/10/10/Promise%E5%BC%82%E6%AD%A5%E5%A4%84%E7%90%86/" target="_self">
+          Promise异步处理
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/10/10/Promise%E5%BC%82%E6%AD%A5%E5%A4%84%E7%90%86/" target="_self">
+          
+          
+            
+          
+          
+之前的Promise实现是在同步状态下进行的，试想一下，如果executor里面执行的是异步，根据js执行的顺序，调用then的时候，Promise对象的状态还是PENDING，以下代码无输出:
+
+12345678910111213const Promise = require(&quot;./Promise&quot;)const p = new Promise((resolve, rejec
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-10-10 09:53" pubdate>
+              2021-10-10
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Promise-A-%E8%A7%84%E8%8C%83%E7%9A%84%E5%AE%9E%E7%8E%B0/">Promise A+规范的实现</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/js/">js</a>
+            
+              <a href="/tags/node/">node</a>
+            
+              <a href="/tags/Promise/">Promise</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2021/10/10/Promise%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%AE%9E%E7%8E%B0/" target="_self">
+          <img src="/img/5ab27ed2-e652-46e7-9697-809bcc91f25d.jpg" srcset="/img/loading.gif" lazyload alt="Promise的基本实现">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/10/10/Promise%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%AE%9E%E7%8E%B0/" target="_self">
+          Promise的基本实现
+        </a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2021/10/10/Promise%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%AE%9E%E7%8E%B0/" target="_self">
+          
+          
+            
+          
+          
+Promise的基本用法是：创建一个Promise,传入一个回调函数，该回调有两个参数函数，在回调中执行用户操作，如果成功，调用第一个参数回调，如果失败，调用第二个参数回调。其有一个then方法，调用then方法会传入两个函数参数，分别对应成功状态的输出和失败状态的输出
+
+分析
+Promise传入的参数回调函数会自动执行
+Promise本身有一个状态，成功的回调和失败的回调分别会将状态改变
+th
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-10-10 09:50" pubdate>
+              2021-10-10
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/Promise-A-%E8%A7%84%E8%8C%83%E7%9A%84%E5%AE%9E%E7%8E%B0/">Promise A+规范的实现</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/js/">js</a>
+            
+              <a href="/tags/node/">node</a>
+            
+              <a href="/tags/Promise/">Promise</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
         <a href="/2021/10/10/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E3%80%81%E5%87%BD%E6%95%B0%E6%9F%AF%E9%87%8C%E5%8C%96%E3%80%81%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85%E6%A8%A1%E5%BC%8F%E5%92%8C%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%AE%9E%E7%8E%B0/" target="_self">
           <img src="/img/5ab27ed2-e652-46e7-9697-809bcc91f25d.jpg" srcset="/img/loading.gif" lazyload alt="高阶函数、函数柯里化、发布订阅模式和观察者模式的实现">
         </a>
@@ -234,9 +614,9 @@
             
               <a href="/tags/js/">js</a>
             
-              <a href="/tags/Promise/">Promise</a>
-            
               <a href="/tags/node/">node</a>
+            
+              <a href="/tags/Promise/">Promise</a>
             
           </div>
         
